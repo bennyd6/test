@@ -1,0 +1,70 @@
+.crop-recommendation-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.crop-recommendation-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    background-color: #E7F0DC;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.form-int{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.crop-recommendation-form input{
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #ffff;
+    border: 1px rgb(89,116,69) solid;
+    padding-left: 10px;
+}
+
+
+.crop-recommendation-form button{
+    border: none;
+    background-color: rgb(89,116,69);
+    color: bisque;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.crop-recommendation-form button:hover{
+    cursor: pointer;
+    background-color: rgb(226,210,197);
+    color: rgb(89,116,69);
+}
+
+
+.cs-int{
+    border: 2px solid rgb(89,116,69);
+    border-radius: 25px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e3eae1;
+}
+
+.cs-int h5{
+    font-size: 15px;
+}
