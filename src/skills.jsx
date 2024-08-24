@@ -2,12 +2,15 @@ import cv from "./assets/cv.png"
 import wd from "./assets/wd.png"
 import es from "./assets/es.png"
 import dsa from "./assets/dsa.png"
-
+import {Fade} from "react-awesome-reveal"
 
 function Skills(){
     return(
+        <>
         <div className="skills-main">
-            <h1>My Skills</h1>
+            <Fade direction='up'>
+                <h1>My Skills</h1>
+            </Fade>
             <div class="timeline">
                 <div class="container left">
                     <img src={wd} alt=""/>
@@ -39,6 +42,8 @@ function Skills(){
                 </div>
             </div>
         </div>
+
+        </>
     )
 }
 
