@@ -14,8 +14,12 @@ function Home() {
           <h1 className="main-heading">Welcome,<br /> I'm <span>Benny</span></h1>
         </Fade>
         <div className="home-down-one">
-          <a href="https://github.com/bennyd6"><img src={GH} alt="" /></a>
-          <a href="www.linkedin.com/in/benny-bandarupalli-bb3561263"><img src={li} alt="" /></a>
+          <Fade direction="left">
+            <a href="https://github.com/bennyd6" target="__blank"><img src={GH} alt="" /></a>
+          </Fade>
+          <Fade direction="right">
+            <a href="https://linkedin.com/in/benny-bandarupalli-bb3561263" target="__blank"><img src={li} alt="" /></a>
+          </Fade>
         </div>
       </div>
       <div className="home-least">

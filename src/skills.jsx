@@ -41,6 +41,50 @@ function Skills(){
                     </div>
                 </div>
             </div>
+            <div className="lang">
+                <div className="lang-inner">
+                    Java
+                </div>
+                <div className="lang-inner">
+                    C++
+                </div>
+                <div className="lang-inner">
+                    C
+                </div>
+                <div className="lang-inner">
+                    Python
+                </div>
+                <div className="lang-inner">
+                    HTML
+                </div>
+                <div className="lang-inner">
+                    CSS
+                </div>
+                <div className="lang-inner">
+                    JavaScript
+                </div>
+                <div className="lang-inner">
+                    React
+                </div>
+                <div className="lang-inner">
+                    Node
+                </div>
+                <div className="lang-inner">
+                    Express
+                </div>
+                <div className="lang-inner">
+                    MongoDB
+                </div>
+                <div className="lang-inner">
+                    Mongoose
+                </div>
+                <div className="lang-inner">
+                    MySQL
+                </div>
+                <div className="lang-inner">
+                    Flask
+                </div>
+            </div>
         </section>
 
         </>
