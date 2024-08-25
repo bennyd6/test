@@ -2,7 +2,7 @@ import {Fade} from 'react-awesome-reveal'
 function Contact() {
     return (
     <>
-      <section className="contact-section">
+      <section className="contact-section" id="contact">
         <Fade direction='up'>
         <h2>Ping me now!</h2>
         </Fade>

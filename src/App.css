@@ -38,6 +38,26 @@ body{
     justify-content: flex-start;
 }
 
+.home-down-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.home-down-one img{
+    height: 30px;
+    transition: height 0.3s ease;
+}
+
+.home-down-one img:hover{
+    height: 45px;
+    filter: drop-shadow(4px 5px 4px #ffffff);
+    /* box-shadow: #bdb6e5; */
+}
+
 .home-least{
     height: 15%;
     width: 100%;
@@ -49,6 +69,7 @@ body{
 
 .home-least img{
     height: 50px;
+    padding-right: 50px;
 }
 
 .main-heading{
@@ -65,6 +86,7 @@ body{
 
 #navbar{
     position: fixed;
+    right: 0;
     width: 45%;
     height: 10%;
     display: flex;
@@ -380,7 +402,7 @@ body{
   .contact-section h2{
     color: #ffffff;
     font-size: 40px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     margin-top: -65px;
   }
   
@@ -439,3 +461,65 @@ body{
 .contact-section button:hover{
     box-shadow: #2c2558 3px 3px 3px 3px;
   }
+
+
+
+#navbar {
+    position: fixed;
+    width: 35%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #231B55;
+    border-bottom: 2px solid #f3cdcd;
+    z-index: 1000;
+}
+
+#navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #231B55;
+    z-index: -1;
+}
+
+.sections {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #bdb6e5;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sections::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f3cdcd;
+    transition: width 0.3s ease;
+}
+
+.sections:hover::after {
+    width: 100%;
+}
+
+.sections:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.sections.active {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}

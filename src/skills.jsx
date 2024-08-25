@@ -7,7 +7,7 @@ import {Fade} from "react-awesome-reveal"
 function Skills(){
     return(
         <>
-        <div className="skills-main">
+        <section className="skills-main" id="skills">
             <Fade direction='up'>
                 <h1>My Skills</h1>
             </Fade>
@@ -41,7 +41,7 @@ function Skills(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         </>
     )

@@ -1,7 +1,7 @@
 import {Fade} from "react-awesome-reveal"
 function About(){
     return(
-        <div className="about-main">
+        <div className="about-main" id="about">
             <div className="abt-parah">
                 <Fade direction='left'>
                     <h1 id="about-heading">About me</h1>
