@@ -42,48 +42,83 @@ function Skills(){
                 </div>
             </div>
             <div className="lang">
-                <div className="lang-inner">
-                    Java
-                </div>
+                <Fade direction='up'>
+                    <div className="lang-inner">
+                        Java
+                    </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     C++
                 </div>
+
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     C
                 </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     Python
                 </div>
+
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     HTML
                 </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     CSS
                 </div>
+
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     JavaScript
                 </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     React
                 </div>
+
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     Node
                 </div>
+                </Fade>
+                <Fade direction='down'>
+
                 <div className="lang-inner">
                     Express
                 </div>
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     MongoDB
                 </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     Mongoose
                 </div>
+
+                </Fade>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     MySQL
                 </div>
+                </Fade>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     Flask
                 </div>
+
+                </Fade>
             </div>
         </section>
 
