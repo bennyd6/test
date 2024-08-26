@@ -209,7 +209,14 @@ body{
     animation-range: entry 30% cover 20%;
     /* box-shadow: #e142e3 0px 20px 30px -10px; */
 }
-
+@media screen and (max-width: 1340px) {
+    .container{
+        width: 30%;
+    }
+    .left{
+        left: 1000%;
+    }
+}
 .left{
     left: -8%;
 }
@@ -627,6 +634,49 @@ body{
     }
 }
 
+@media screen and (max-width: 600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    /* .left{
+        left: 10px;
+    } */
+    .timeline::after{
+        left:31px;
+    }
+    .container{
+        width: 70%;
+        padding-left: 80px;
+        padding-right: 25px;
+        height: 100px;
+    }
+
+    .text-box{
+        font-size: 13px;
+    }
+
+    .text-box small{
+        margin-bottom: 10px;
+    }
+
+    .right{
+        left: -5%;
+        /* right: 10%; */
+    }
+    .left{
+        /* right: 10%; */
+        left: -5%;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .left-arrow, .right-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+    }
+
+}
 /* Additional adjustment for screens below 500px */
 @media screen and (max-width: 500px) {
     /* Ensure no overflow */
@@ -650,6 +700,14 @@ body{
     
     .navbar {
         width: 100%;
+        border-bottom-left-radius: 0;
+    }
+    #navbar{
+        border-bottom-left-radius: 0;
+
+    }
+    .sections{
+        font-size: 12px;
     }
     
     /* Reduce size of elements */
