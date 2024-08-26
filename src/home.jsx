@@ -2,6 +2,7 @@ import mouse from "./assets/Animation.gif"
 import { Fade } from 'react-awesome-reveal';
 import GH from './assets/github.png'
 import li from './assets/linkedin.png'
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -23,7 +24,7 @@ function Home() {
         </div>
       </div>
       <div className="home-least">
-        <img src={mouse} alt="" />
+      <Link to="about" className="sections" smooth={true} duration={500}><img src={mouse} alt="" /></Link>
         {/* <MyLottieAnimation /> */}
       </div>
     </section>

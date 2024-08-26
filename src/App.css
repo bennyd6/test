@@ -290,6 +290,7 @@ body{
     min-width: 50px;
     color: #ffffff;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
@@ -404,6 +405,8 @@ body{
     cursor: pointer;
 }
 
+
+
 /* ------------------------------------------------------------------------------------ */
 
 .contact-section{
@@ -480,7 +483,7 @@ body{
     box-shadow: #2c2558 3px 3px 3px 3px;
   }
 
-
+/* ----------------------------------------------------------------------------------------------------------- */
 
 #navbar {
     position: fixed;
@@ -516,7 +519,7 @@ body{
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.sections::after {
+/* .sections::after {
     content: '';
     position: absolute;
     left: 0;
@@ -525,7 +528,7 @@ body{
     height: 2px;
     background-color: #f3cdcd;
     transition: width 0.3s ease;
-}
+} */
 
 .sections:hover::after {
     width: 100%;
@@ -537,7 +540,148 @@ body{
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
+.sections {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #bdb6e5;
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+
+.sections:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    text-decoration-color: #f3cdcd;
+    text-decoration-thickness: 2px;
+}
+
+
 .sections.active {
     color: #ffffff;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+
+.home-bg,
+.about-main,
+.skills-main,
+.projects-main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1373px) {
+    #navbar{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1004px){
+    #navbar{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .home-down-one, .home-down, .home-up, .home-least,
+    .projects-up, .projects-down, .card-main,
+    .contact-section form, .timeline, .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-main, .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* .home-down-one img,
+    .home-least img {
+        height: 30px;
+        max-width: 100%;
+    } */
+
+    /* Adjust paddings and gaps */
+    .home-down-one {
+        gap: 30px;
+        /* padding-right: 10px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-least img{
+        height: 50px;
+        padding-right: 0px;
+    }
+    .abt-parah{
+        width: 70%;
+    }
+    .abt-parah p{
+        text-indent: 100px;
+    }
+}
+
+/* Additional adjustment for screens below 500px */
+@media screen and (max-width: 500px) {
+    /* Ensure no overflow */
+    .home-bg,
+    .about-main,
+    .skills-main,
+    .projects-main,
+    .contact-section,
+    .home-down-one,
+    .home-up,
+    .home-least,
+    .projects-up,
+    .projects-down,
+    .card-main,
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    
+    /* Reduce size of elements */
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .card-main {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    .home-down-one img {
+        max-width: 30px;
+        height: auto;
+    }
+    
+    /* Adjust padding/margin/gaps */
+    .home-down-one {
+        gap: 5px;
+    }
+    .home-down-one {
+        gap: 30px;
+        /* padding-right: 10px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lang {
+        gap: 5px;
+    }
+    
 }
