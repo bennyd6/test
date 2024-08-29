@@ -6,12 +6,15 @@ import ShootingStars from './shootingStars';
 import Projects from './projects';
 import Contact from './contact';
 import Navbar from './navbar';
+import {Fade} from 'react-awesome-reveal';
 
 function App() {
   
     return (
       <>
-      <Navbar></Navbar>
+      <Fade direction='right'>
+        <Navbar></Navbar>
+      </Fade>
       <Home></Home>
       <About></About>
       <Skills/>

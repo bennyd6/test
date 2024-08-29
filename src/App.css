@@ -634,49 +634,6 @@ body{
     }
 }
 
-@media screen and (max-width: 600px) {
-    .timeline{
-        margin: 50px auto;
-    }
-    /* .left{
-        left: 10px;
-    } */
-    .timeline::after{
-        left:31px;
-    }
-    .container{
-        width: 70%;
-        padding-left: 80px;
-        padding-right: 25px;
-        height: 100px;
-    }
-
-    .text-box{
-        font-size: 13px;
-    }
-
-    .text-box small{
-        margin-bottom: 10px;
-    }
-
-    .right{
-        left: -5%;
-        /* right: 10%; */
-    }
-    .left{
-        /* right: 10%; */
-        left: -5%;
-    }
-    .left img, .right img{
-        left: 10px;
-    }
-    .left-arrow, .right-arrow{
-        border-right: 15px solid #fff;
-        border-left: 0;
-        left: -14px;
-    }
-
-}
 /* Additional adjustment for screens below 500px */
 @media screen and (max-width: 500px) {
     /* Ensure no overflow */
@@ -704,7 +661,7 @@ body{
     }
     #navbar{
         border-bottom-left-radius: 0;
-
+        
     }
     .sections{
         font-size: 12px;
@@ -714,7 +671,7 @@ body{
     .main-heading {
         font-size: 40px;
     }
-
+    
     .card-main {
         width: 95%;
         margin: 10px auto;
@@ -737,9 +694,52 @@ body{
         align-items: center;
         justify-content: center;
     }
-
+    .container{
+        width: 10%;
+        padding-left: 80px;
+        padding-right: 25px;
+        height: 100px;
+    }
+    
     .lang {
         gap: 5px;
     }
     
+}
+@media screen and (max-width: 600px) {
+    .timeline{
+        margin: 50px auto;
+    }
+    /* .left{
+        left: 10px;
+    } */
+    .timeline::after{
+        left:31px;
+    }
+
+    .text-box{
+        font-size: 13px;
+    }
+
+    .text-box small{
+        margin-bottom: 10px;
+    }
+
+    .right{
+        left: -5%;
+        /* right: 10%; */
+    }
+    .left{
+        /* right: 10%; */
+        left: -5%;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .left-arrow, .right-arrow{
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -14px;
+    }
+
 }
