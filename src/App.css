@@ -359,6 +359,7 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 25px;
+    border: #061B44 2px solid;
 }
 
 .card-two{
@@ -605,6 +606,10 @@ body{
     .card-main, .container {
         width: 90%;
         margin: auto;
+    }
+
+    .card-one img{
+        border: px solid black;
     }
 
     /* .home-down-one img,
