@@ -304,7 +304,7 @@ body{
 
 .projects-main{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('./assets/projects-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -330,11 +330,14 @@ body{
 
 .projects-down{
     width: 70%;
-    height: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    min-height: 60%;
+    display:grid;
+    grid-template-columns:auto auto auto;
+    overflow: hidden;
+    row-gap: 25px;
+    
+    /* align-items: center;
+    justify-content: space-around; */
 }
 
 /* ----------------------------------------------------------------------------------------------------------------- */

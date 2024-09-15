@@ -4,6 +4,7 @@ import {Fade} from "react-awesome-reveal"
 import Gen from './assets/genesis.png'
 import Cre from './assets/crexo.png'
 import Num from './assets/numbers.png'
+import Lev from './assets/Levilyze.png'
 function Projects(){
     return(
         <section className='projects-main' id="projects">
@@ -22,6 +23,9 @@ function Projects(){
                 </Fade>
                 <Fade direction='right' delay={600}>
                 <Card heading='Numbers' a='https://github.com/bennyd6/' img={Num} para="Numbers is an innovative project aimed at creating a digital twin of a farm. This virtual model replicates the physical environment of a farm, integrating real-time data from various sensors."></Card>
+                </Fade>
+                <Fade direction='right' delay={0}>
+                <Card heading='Levilyze' a='https://github.com/bennyd6/levilyze' img={Lev} para="Levilyze is a code analysis platform designed to evaluate both the time and memory consumption of code. By allowing users to input their code,helping users understand their code's efficiency."></Card>
                 </Fade>
             </div>
         </section>
