@@ -166,7 +166,7 @@ body{
 
 .skills-main{
     width: 100vw;
-    height: 120vh;
+    min-height: 120vh;
     background-color: #061B44;
     padding-top: 10px;
     text-align: center;
@@ -183,15 +183,18 @@ body{
 
 
 
-.lang{
+.lang {
     width: 100%;
-    height: 10%;
+    height: auto; /* Adjust height to auto for responsiveness */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap; /* Allows wrapping of items when the screen size reduces */
+    padding-right: 50px; /* Add some padding for spacing */
 }
+
 
 .lang-inner{
     padding: 5px;
@@ -201,6 +204,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
@@ -230,65 +234,78 @@ body{
     font-size: 45px;
 }
 
-.projects-down{
-    width: 70%;
+.projects-down {
+    width: 90%;
     min-height: 60%;
-    display:grid;
-    grid-template-columns:auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     overflow: hidden;
-    row-gap: 25px;
-    
-    /* align-items: center;
-    justify-content: space-around; */
+    justify-items: center;
 }
+
+@media (max-width: 1024px) {
+    .projects-down {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-down {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------------- */
 
-.card-main{
+.card-main {
     min-height: 460px;
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
     background-color: #ffffff;
     border-radius: 25px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 
-.card-one{
+.card-main:hover {
+    transform: scale(1.05);
+}
+
+.card-one {
     height: 30%;
     width: 80%;
 }
 
-.card-one img{
+.card-one img {
     height: 100%;
     width: 100%;
     border-radius: 25px;
     border: #061B44 2px solid;
 }
 
-.card-two{
+.card-two {
     height: 20%;
     width: 80%;
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; */
 }
 
-.card-two h1{
+.card-two h1 {
     margin-bottom: 15px;
 }
 
-.card-two p{
+.card-two p {
     margin-top: 0;
     font-size: 13px;
     text-align: justify;
     text-indent: 35px;
 }
 
-.card-three{
+.card-three {
     height: 20%;
     width: 80%;
     display: flex;
@@ -297,23 +314,22 @@ body{
     justify-content: center;
 }
 
-.git-outer{
+.git-outer {
     height: 60%;
     width: 80%;
     background-color: black;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     transition: width 0.5s ease;
 }
 
-.git-outer img{
+.git-outer img {
     height: 40px;
 }
 
-.git-outer:hover{
+.git-outer:hover {
     width: 100%;
     cursor: pointer;
 }
@@ -645,7 +661,7 @@ body{
     position: relative;
     border-radius: 6px;
     font-size: 15px;
-    box-shadow: #e142e3 0px 20px 30px -10px;
+    /* box-shadow: #e142e3 0px 20px 30px -10px; */
     animation: sr3 ease-in-out;
 }
 
