@@ -156,7 +156,7 @@ body{
 .abt-parah p{
     font-weight: 600;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
     color: #bdb6e5;
 }
 
@@ -297,7 +297,7 @@ body{
 .card-two p {
     margin-top: 0;
     font-size: 13px;
-    text-align: justify;
+    text-align: center;
     text-indent: 35px;
 }
 
