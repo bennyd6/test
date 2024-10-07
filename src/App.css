@@ -704,7 +704,6 @@ body{
     left: -12px;
 }
 
-/* Ensure larger breakpoints are handled before smaller ones */
 
 @media only screen and (max-width: 1100px) {
     .text-box {
@@ -789,5 +788,23 @@ body{
         border-right: 15px solid #fff;
         border-left: 0;
         left: -14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text-box{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .text-box{
+        width: 300px;
+        padding-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .text-box{
+        width: 250px;
+        padding-bottom: 5px;
     }
 }
