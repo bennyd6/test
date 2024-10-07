@@ -6,7 +6,7 @@ function Contact() {
         <Fade direction='up'>
         <h2>Ping me now!</h2>
         </Fade>
-        <Fade direction='right'>
+        <Fade direction='left'>
         <form>
           <input type="text" name="name" placeholder='Enter your name' />
           <input type="email" name="email" placeholder='Enter your email'/>

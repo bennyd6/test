@@ -261,7 +261,7 @@ body{
 
 .card-main {
     min-height: 460px;
-    width: 90%;
+    width: 110%;
     max-width: 300px;
     background-color: #ffffff;
     border-radius: 25px;    
@@ -270,10 +270,6 @@ body{
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-}
-
-.card-main:hover {
-    transform: scale(1.05);
 }
 
 .card-one {
@@ -352,14 +348,8 @@ body{
   .contact-section h2{
     color: #ffffff;
     font-size: 40px;
-    /* text-decoration: underline; */
     margin-top: -65px;
   }
-  
-  .contact-section p{
-    margin-top: -20px;
-  }
-  
   
   .contact-section form{
     margin-top: 30px;
@@ -382,22 +372,17 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 5px;
     padding-left: 10px;
-    font-family: 'poppins';
+    font-family: 'Poppins';
   }
   
-  .contact-section input:focus,textarea:focus{
-    outline: none;
-    box-shadow: #2c2558 3px 3px 3px 3px;
-}
-
-#msg{
+  #msg{
     width: 500px;
     height: 150px;
     resize: none;
-    font-family: 'poppins';
-}
-
-.contact-section button{
+    font-family: 'Poppins';
+  }
+  
+  .contact-section button{
     background-color: #231B55;
     width: 100px;
     height: 30px;
@@ -406,11 +391,92 @@ body{
     font-size: 15px;
     border: none;
     cursor: pointer;
-}
-
-.contact-section button:hover{
+  }
+  
+  .contact-section button:hover{
     box-shadow: #2c2558 3px 3px 3px 3px;
   }
+  
+  @media (max-width: 1024px) {
+    .contact-section form {
+      width: 600px;
+      height: 380px;
+    }
+    .contact-section input {
+      width: 400px;
+    }
+    #msg{
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 35px;
+    }
+    .contact-section form {
+        width: 500px;
+        height: 350px;
+    }
+    .contact-section input, textarea {
+        width: 350px;
+    }
+    #msg{
+        width: 350px;
+    }
+  }
+@media (max-width: 700px) {
+    .contact-section h2 {
+        font-size: 35px;
+    }
+    .contact-section form {
+        width: 500px;
+        height: 350px;
+        padding: 150px;
+    }
+    .contact-section input, textarea {
+        width: 250px;
+    }
+    #msg{
+        width: 250px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .contact-section h2 {
+      font-size: 30px;
+    }
+    .contact-section form {
+      min-width: 350px;
+      height: 350px;
+      padding: 20px;
+    }
+    .contact-section input, textarea {
+      width: 300px;
+    }
+    #msg{
+        width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section h2 {
+      font-size: 28px;
+    }
+    .contact-section form {
+      width: 90%;
+      min-height: 350px;
+      height: auto;
+    }
+    .contact-section input, textarea {
+      width: 250px;
+    }
+    #msg{
+        width: 250px;
+    }
+    
+  }
+  
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
