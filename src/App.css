@@ -330,7 +330,7 @@ body{
 
 /* ------------------------------------------------------------------------------------ */
 
-.contact-section{
+.contact-section {
     min-height: 113vh;
     display: flex;
     flex-direction: column;
@@ -339,107 +339,151 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
+    padding: 20px; /* added padding */
   }
   
-  .contact-section h2{
+  .contact-section h2 {
     color: #ffffff;
     font-size: 40px;
     margin-top: -65px;
+    text-align: center;
   }
   
-  .contact-section form{
+  .contact-section form {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:20px;
-    width: 700px;
-    height: 400px;
+    gap: 20px;
+    max-width: 700px; /* make sure the form is responsive */
+    width: 95%; /* make it full width on small screens */
+    height: auto;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     background-color: #4d4969;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px; /* added padding */
   }
   
-  .contact-section input,textarea{
-      width: 500px;
-      height: 25px;
-      border: none;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      border-radius: 5px;
-      padding-left: 10px;
-      font-family: 'Poppins';
-    }
-    
-.contact-section input:focus,textarea:focus{
-    outline: none;
+  .contact-section input, textarea {
+    width: 100%; /* make inputs full-width */
+    max-width: 500px; /* restrict the width on larger screens */
+    height: 40px; /* increase input height for better touch target */
     border: none;
-    box-shadow: rgb(35,27,85) 15px 15px 15px;
-} 
-#msg{
-    width: 500px;
-    height: 150px;
-    resize: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    padding-left: 10px;
     font-family: 'Poppins';
   }
   
-  .contact-section button{
+  .contact-section input:focus, textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: rgb(35, 27, 85) 15px 15px 15px;
+  }
+  
+  #msg {
+    height: 150px;
+    resize: none;
+  }
+  
+  .contact-section button {
     background-color: #231B55;
     width: 100px;
-    height: 30px;
+    height: 40px; /* increased height */
     border-radius: 5px;
     color: #F0F4F9;
     font-size: 15px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px; /* added margin for spacing */
   }
   
-  .contact-section button:hover{
+  .contact-section button:hover {
     box-shadow: #2c2558 3px 3px 3px 3px;
   }
   
-  @media (max-width: 1024px) {
-    .flip-card-front form, .flip-card-back form {
-      width: 600px;
-      height: 380px;
+  .contact-section button:disabled {
+    background-color: #9b9b9b;
+    cursor: not-allowed;
+  }
+  
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #231B55;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px 0;
+  }
+  
+  .success-message {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    animation: fadeInSuccess 1s ease-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
     }
-    .flip-card-front input {
-      width: 400px;
-    }
-    #msg{
-        width: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-section h2 {
-        font-size: 35px;
-    }
-    .flip-card-front form {
-        width: 500px;
-        height: 350px;
-    }
-    .flip-card-front input, textarea {
-        width: 350px;
-    }
-    #msg{
-        width: 350px;
+    100% {
+      transform: rotate(360deg);
     }
   }
-@media (max-width: 700px) {
+  
+  @keyframes fadeInSuccess {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .form-loading {
+    opacity: 0.5;
+  }
+  
+  .form-success {
+    opacity: 1;
+    animation: fadeInSuccess 1.5s ease-out;
+  }
+  
+  @media (max-width: 1024px) {
+    .contact-section form {
+      width: 80%; /* form width 80% of the screen */
+      padding: 20px;
+    }
+    .contact-section input, textarea {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .contact-section h2 {
-        font-size: 35px;
+      font-size: 35px;
     }
-    .flip-card-front form {
-        width: 500px;
-        height: 350px;
-        padding: 150px;
+    .contact-section form {
+      width: 90%; /* form width 90% */
     }
-    .flip-card-front input, textarea {
-        width: 250px;
-    }
-    #msg{
-        width: 250px;
+    .contact-section input, textarea {
+      width: 100%; /* full-width for inputs */
     }
   }
   
@@ -447,16 +491,14 @@ body{
     .contact-section h2 {
       font-size: 30px;
     }
-    .flip-card-front form {
-      min-width: 350px;
-      height: 350px;
-      padding: 20px;
+    .contact-section form {
+      width: 95%; /* form width 95% */
     }
-    .flip-card-front input, textarea {
-      width: 300px;
+    .contact-section input, textarea {
+      width: 100%; /* full-width inputs */
     }
-    #msg{
-        width: 300px;
+    #msg {
+      width: 100%; /* ensure the textarea is responsive */
     }
   }
   
@@ -464,19 +506,18 @@ body{
     .contact-section h2 {
       font-size: 28px;
     }
-    .flip-card-front form {
-      width: 90%;
-      min-height: 350px;
-      height: auto;
+    .contact-section form {
+      width: 100%; /* form takes full width */
+      padding: 15px;
     }
-    .flip-card-front input, textarea {
-      width: 250px;
+    .contact-section input, textarea {
+      width: 100%;
     }
-    #msg{
-        width: 250px;
+    #msg {
+      width: 100%;
     }
   }
-  
+    
 
 /* ----------------------------------------------------------------------------------------------------------- */
 

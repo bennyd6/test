@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 
 export default function Contact() {
   const [result, setResult] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending...");
+    setIsLoading(true);
     setIsSubmitted(false);
 
     const formData = new FormData(event.target);
@@ -24,35 +25,38 @@ export default function Contact() {
       if (data.success) {
         setResult("Thanks for your message!");
         setIsSubmitted(true);
+        setIsLoading(false);
         event.target.reset();
       } else {
-        console.log("Error", data);
         setResult(data.message);
+        setIsLoading(false);
       }
     } catch (error) {
-      console.log("Error", error);
       setResult("Something went wrong. Please try again.");
+      setIsLoading(false);
     }
   };
 
   return (
     <div className="contact-section" id="contact">
       <h2>Ping me now!</h2>
-      <div className="flip-card">
-        <div className={`flip-card-inner ${isSubmitted ? 'flipped' : ''}`}>
-          <div className="flip-card-front">
-            <form onSubmit={onSubmit}>
-              <input type="text" name="name" required placeholder="Enter your name" />
-              <input type="email" name="email" placeholder="Enter your email" required />
-              <textarea name="message" id="msg" required placeholder="Leave your message here"></textarea>
-              <button type="submit">Submit Form</button>
-            </form>
-          </div>
-          <div className="flip-card-back">
-            {/* <div className={`message ${isSubmitted ? 'success' : ''}`}> <h1> {result}</h1></div> */}
-          </div>
-        </div>
-      </div>
+      <form
+        onSubmit={onSubmit}
+        className={isLoading ? "form-loading" : isSubmitted ? "form-success" : ""}
+      >
+        {isLoading ? (
+          <div className="loading-spinner"></div>
+        ) : isSubmitted ? (
+          <div className="success-message">Thanks for your message!</div>
+        ) : (
+          <>
+            <input type="text" name="name" required placeholder="Enter your name" />
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <textarea name="message" id="msg" required placeholder="Leave your message here"></textarea>
+            <button type="submit" disabled={isLoading}>Submit Form</button>
+          </>
+        )}
+      </form>
     </div>
   );
 }
