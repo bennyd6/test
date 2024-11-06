@@ -7,7 +7,6 @@ import Projects from './projects';
 import Contact from './contact';
 import Navbar from './navbar';
 import {Fade} from 'react-awesome-reveal';
-
 function App() {
   
     return (
