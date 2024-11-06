@@ -8,7 +8,6 @@ function Home() {
   return (
     <section className="home-bg" id="home">
       <div className="home-up">
-        {/* <Navbar /> */}
       </div>
       <div className="home-down">
         <Fade direction="down">
@@ -24,8 +23,7 @@ function Home() {
         </div>
       </div>
       <div className="home-least">
-      <Link to="about" className="sections" smooth={true} duration={500}><img src={mouse} alt="" /></Link>
-        {/* <MyLottieAnimation /> */}
+      <Link to="about" className="scroll-link" smooth={true} duration={500}><img src={mouse} alt="" /></Link>
       </div>
     </section>
   );

@@ -403,11 +403,11 @@ body{
   }
   
   @media (max-width: 1024px) {
-    .contact-section form {
+    .flip-card-front form, .flip-card-back form {
       width: 600px;
       height: 380px;
     }
-    .contact-section input {
+    .flip-card-front input {
       width: 400px;
     }
     #msg{
@@ -419,11 +419,11 @@ body{
     .contact-section h2 {
         font-size: 35px;
     }
-    .contact-section form {
+    .flip-card-front form {
         width: 500px;
         height: 350px;
     }
-    .contact-section input, textarea {
+    .flip-card-front input, textarea {
         width: 350px;
     }
     #msg{
@@ -434,12 +434,12 @@ body{
     .contact-section h2 {
         font-size: 35px;
     }
-    .contact-section form {
+    .flip-card-front form {
         width: 500px;
         height: 350px;
         padding: 150px;
     }
-    .contact-section input, textarea {
+    .flip-card-front input, textarea {
         width: 250px;
     }
     #msg{
@@ -451,12 +451,12 @@ body{
     .contact-section h2 {
       font-size: 30px;
     }
-    .contact-section form {
+    .flip-card-front form {
       min-width: 350px;
       height: 350px;
       padding: 20px;
     }
-    .contact-section input, textarea {
+    .flip-card-front input, textarea {
       width: 300px;
     }
     #msg{
@@ -468,18 +468,17 @@ body{
     .contact-section h2 {
       font-size: 28px;
     }
-    .contact-section form {
+    .flip-card-front form {
       width: 90%;
       min-height: 350px;
       height: auto;
     }
-    .contact-section input, textarea {
+    .flip-card-front input, textarea {
       width: 250px;
     }
     #msg{
         width: 250px;
     }
-    
   }
   
 
@@ -589,7 +588,7 @@ body{
 @media screen and (max-width: 700px) {
     .home-down-one, .home-down, .home-up, .home-least,
     .projects-up, .projects-down, .card-main,
-    .contact-section form, .timeline, .container {
+    .flip-card-front form, .timeline, .container {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -638,7 +637,7 @@ body{
     .about-main,
     .skills-main,
     .projects-main,
-    .contact-section,
+    .flip-card-front, .flip-card-back,
     .home-down-one,
     .home-up,
     .home-least,

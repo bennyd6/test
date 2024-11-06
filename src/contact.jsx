@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -17,7 +18,7 @@ export default function Contact() {
         method: "POST",
         body: formData
       });
-      
+
       const data = await response.json();
 
       if (data.success) {
@@ -41,8 +42,8 @@ export default function Contact() {
         <div className={`flip-card-inner ${isSubmitted ? 'flipped' : ''}`}>
           <div className="flip-card-front">
             <form onSubmit={onSubmit}>
-              <input type="text" name="name" required placeholder='Enter your name'/>
-              <input type="email" name="email" placeholder='Enter your email' required/>
+              <input type="text" name="name" required placeholder="Enter your name" />
+              <input type="email" name="email" placeholder="Enter your email" required />
               <textarea name="message" id="msg" required placeholder="Leave your message here"></textarea>
               <button type="submit">Submit Form</button>
             </form>
