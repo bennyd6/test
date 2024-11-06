@@ -179,20 +179,16 @@ body{
     font-size: 45px;
 }
 
-
-
-
-
 .lang {
     width: 100%;
-    height: auto; /* Adjust height to auto for responsiveness */
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap; /* Allows wrapping of items when the screen size reduces */
-    padding-right: 50px; /* Add some padding for spacing */
+    flex-wrap: wrap; 
+    padding-right: 50px; 
 }
 
 

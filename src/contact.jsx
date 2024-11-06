@@ -8,7 +8,7 @@ export default function Contact() {
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending...");
-    setIsSubmitted(false); // Reset the flip to show the form during submission
+    setIsSubmitted(false);
 
     const formData = new FormData(event.target);
     formData.append("access_key", "9368c00e-3540-441c-9c04-fcce5b674635");
@@ -23,7 +23,7 @@ export default function Contact() {
 
       if (data.success) {
         setResult("Thanks for your message!");
-        setIsSubmitted(true); // Show success message after form submission
+        setIsSubmitted(true);
         event.target.reset();
       } else {
         console.log("Error", data);
@@ -49,7 +49,7 @@ export default function Contact() {
             </form>
           </div>
           <div className="flip-card-back">
-            <div className={`message ${isSubmitted ? 'success' : ''}`}>{result}</div>
+            {/* <div className={`message ${isSubmitted ? 'success' : ''}`}> <h1> {result}</h1></div> */}
           </div>
         </div>
       </div>
