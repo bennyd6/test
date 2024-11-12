@@ -3,6 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 import GH from './assets/github.png'
 import li from './assets/linkedin.png'
 import { Link } from 'react-scroll';
+import em from './assets/email.png'
 
 function Home() {
   return (
@@ -17,8 +18,13 @@ function Home() {
           <Fade direction="left">
             <a href="https://github.com/bennyd6" target="__blank"><img src={GH} alt="" /></a>
           </Fade>
-          <Fade direction="right">
+          <Fade direction="up">
             <a href="https://linkedin.com/in/benny-bandarupalli-bb3561263" target="__blank"><img src={li} alt="" /></a>
+          </Fade>
+          <Fade direction="right">
+          <a href="mailto:cadheshbenny@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src={em} alt="Email" />
+          </a>
           </Fade>
         </div>
       </div>
