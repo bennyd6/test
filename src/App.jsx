@@ -6,14 +6,16 @@ import ShootingStars from './shootingStars';
 import Projects from './projects';
 import Contact from './contact';
 import Navbar from './navbar';
+import Logo from './Logo';
 import {Fade} from 'react-awesome-reveal';
 function App() {
   
     return (
       <>
-      <Fade direction='right'>
+      {/* <Fade direction='right'> */}
+        {/* <Logo></Logo> */}
         <Navbar></Navbar>
-      </Fade>
+      {/* </Fade> */}
       <Home></Home>
       <About></About>
       <Skills/>
