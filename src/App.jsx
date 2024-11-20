@@ -6,6 +6,7 @@ import ShootingStars from './shootingStars';
 import Projects from './projects';
 import Contact from './contact';
 import Navbar from './navbar';
+import Footer from './footer';
 import Logo from './Logo';
 import {Fade} from 'react-awesome-reveal';
 function App() {
@@ -22,6 +23,7 @@ function App() {
       {/* <ShootingStars></ShootingStars> */}
       <Projects></Projects>
       <Contact></Contact>
+      <Footer></Footer>
       </>
     );
   }
