@@ -7,6 +7,7 @@ import Cre from './assets/crexo.png'
 import Num from './assets/numbers.png'
 import Lev from './assets/Levilyze.png'
 import SP from './assets/swiftpost.png'
+import PC from './assets/pc.png'
 function Projects(){
     return(
         <section className='projects-main' id="projects">
@@ -34,6 +35,9 @@ function Projects(){
                 </Fade>
                 <Fade direction='right' delay={400}>
                 <Card heading='GeoGaurd' a='https://github.com/bennyd6/geogaurd-frontend' img={Gg} para="A solution leveraging React for an intuitive frontend, Node.js for backend operations, and machine learning models to predict natural disasters like floods and landslides using satellite imagery and relevant data patterns."></Card>
+                </Fade>
+                <Fade direction='right' delay={400}>
+                <Card heading='Photography Club-CMREC' a='https://github.com/bennyd6' img={PC} para="Bquilt a responsive React website for the CMREC Photography Club, featuring 20+ custom components to showcase photography and events."></Card>
                 </Fade>
             </div>
         </section>
