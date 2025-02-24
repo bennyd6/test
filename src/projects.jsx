@@ -8,6 +8,7 @@ import Num from './assets/numbers.png'
 import Lev from './assets/Levilyze.png'
 import SP from './assets/swiftpost.png'
 import PC from './assets/pc.png'
+import p from './assets/preg.png'
 function Projects(){
     return(
         <section className='projects-main' id="projects">
@@ -36,9 +37,15 @@ function Projects(){
                 <Fade direction='right' delay={400}>
                 <Card heading='GeoGaurd' a='https://github.com/bennyd6/geogaurd-frontend' img={Gg} para="A solution leveraging React for an intuitive frontend, Node.js for backend operations, and machine learning models to predict natural disasters like floods and landslides using satellite imagery and relevant data patterns."></Card>
                 </Fade>
-                <Fade direction='right' delay={400}>
+                <Fade direction='right' delay={0}>
                 <Card heading='Photography Club-CMREC' a='https://github.com/bennyd6' img={PC} para="Bquilt a responsive React website for the CMREC Photography Club, featuring 20+ custom components to showcase photography and events."></Card>
                 </Fade>
+                <Fade direction='right' delay={200}>
+                <Card heading='Motherly' a='https://github.com/bennyd6/motherly' img={p} para="Developed Motherly, a pregnancy support platform using the MERN stack, Gemini API and Twilio. The app empowers expectant mothers with a dashboard, chatbot, and real-time monitoring for better healthcare management."></Card>
+                </Fade>
+                {/* <Fade direction='right' delay={400}>
+                <Card heading='GeoGaurd' a='https://github.com/bennyd6/geogaurd-frontend' img={Gg} para="A solution leveraging React for an intuitive frontend, Node.js for backend operations, and machine learning models to predict natural disasters like floods and landslides using satellite imagery and relevant data patterns."></Card>
+                </Fade> */}
             </div>
         </section>
     )

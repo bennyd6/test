@@ -7,7 +7,7 @@ function About(){
                     <h1 id="about-heading">About me</h1>
                 </Fade>
                 <Fade direction='right'>
-                <p><span>Benny</span> here! Obsessed with computers, I devour web dev, DSA, and competitiveprogramming. Problem-solving fuels me, and I love tackling complex puzzles.  Beyond websites, I explore the frontiers of computer vision and embedded systems, eager to see how tech shapes our world.</p>
+                <p><span>Benny</span> here! Obsessed with computers, I devour web dev, DSA, and competitiveprogramming. Problem-solving fuels me, and I love tackling complex puzzles.  Beyond websites, I explore the frontiers of Machine Learning and Artificial Intelligence, eager to see how tech shapes our world.</p>
                 </Fade>
             </div>
         </div>
