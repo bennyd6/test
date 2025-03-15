@@ -111,12 +111,12 @@ function Skills(){
                 </Fade>
                 <Fade direction='down'>
                 </Fade>
-                <Fade direction='up'>
+                <Fade direction='down'>
                 <div className="lang-inner">
                     MySQL
                 </div>
                 </Fade>
-                <Fade direction='down'>
+                <Fade direction='up'>
                 <div className="lang-inner">
                     Flask
                 </div>

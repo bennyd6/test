@@ -9,6 +9,7 @@ import Lev from './assets/Levilyze.png'
 import SP from './assets/swiftpost.png'
 import PC from './assets/pc.png'
 import p from './assets/preg.png'
+import r from './assets/rai.png'
 function Projects(){
     return(
         <section className='projects-main' id="projects">
@@ -42,6 +43,9 @@ function Projects(){
                 </Fade>
                 <Fade direction='right' delay={200}>
                 <Card heading='Motherly' a='https://github.com/bennyd6/motherly' img={p} para="Developed Motherly, a pregnancy support platform using the MERN stack, Gemini API and Twilio. The app empowers expectant mothers with a dashboard, chatbot, and real-time monitoring for better healthcare management."></Card>
+                </Fade>
+                <Fade direction='right' delay={400}>
+                <Card heading='Globemate' a='https://github.com/bennyd6/roamai' img={r} para="A MERN stack trip planner integrating the Gemini API for itinerary generation, allowing users to book cars and hotels. Features four dashboards: User, Car, Hotel, and Admin for seamless management."></Card>
                 </Fade>
                 {/* <Fade direction='right' delay={400}>
                 <Card heading='GeoGaurd' a='https://github.com/bennyd6/geogaurd-frontend' img={Gg} para="A solution leveraging React for an intuitive frontend, Node.js for backend operations, and machine learning models to predict natural disasters like floods and landslides using satellite imagery and relevant data patterns."></Card>
