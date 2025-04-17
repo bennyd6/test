@@ -10,6 +10,7 @@ import SP from './assets/swiftpost.png'
 import PC from './assets/pc.png'
 import p from './assets/preg.png'
 import r from './assets/rai.png'
+import tsm from './assets/image.png'
 function Projects(){
     return(
         <section className='projects-main' id="projects">
@@ -46,6 +47,9 @@ function Projects(){
                 </Fade>
                 <Fade direction='right' delay={400}>
                 <Card heading='Globemate' a='https://github.com/bennyd6/roamai' img={r} para="A MERN stack trip planner integrating the Gemini API for itinerary generation, allowing users to book cars and hotels. Features four dashboards: User, Car, Hotel, and Admin for seamless management."></Card>
+                </Fade>
+                <Fade direction='right' delay={0}>
+                <Card heading='The Second Mind' a='https://github.com/bennyd6/the-second-mind' img={tsm} para="A Gemini AI based research Assistant which consists of 6+1 agents for best response the query."></Card>
                 </Fade>
                 {/* <Fade direction='right' delay={400}>
                 <Card heading='GeoGaurd' a='https://github.com/bennyd6/geogaurd-frontend' img={Gg} para="A solution leveraging React for an intuitive frontend, Node.js for backend operations, and machine learning models to predict natural disasters like floods and landslides using satellite imagery and relevant data patterns."></Card>
